@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StitchStyle</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <section id="header">
+    <a href="#"><img src="img/logo.png" width="250" height="40" class="logo" alt=""></a>
+
+    <div>
+        <ul id="navbar">
+            <li><a  href="index.html">Home</a></li>
+            <li><a class="active" href="shop.html">Shop</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="cart.html"><img src="img/cart.png" width="40" height="40" class="cart" alt=""></a></li>
+            <a href="#" id="close"><i class="far fa-times"></i></a>
+        </ul>
+    </div>
+    <div id="mobile">
+        <i id="bar" class="fas fa-outdent"></i>
+    </div>
+
+
+
+    </section>
+
+<section id="prodetails" class="section-p1">
+    <div class="single-pro-image">
+        <img src="img/products/f1.png" width="100%" id="MainImg" alt="">
+       <div class="small-img-group">
+        <div class="small-img-col">
+            <img src="img/products/f1.png" width="100%" class="small-img" alt="">
+        </div>
+        <div class="small-img-col">
+            <img src="img/products/f1-1.png" width="100%" class="small-img" alt="">
+        </div>
+        <div class="small-img-col">
+            <img src="img/products/f1.png" width="100%" class="small-img" alt="">
+        </div>
+        <div class="small-img-col">
+            <img src="img/products/f1-1.png" width="100%" class="small-img" alt="">
+        </div>
+       </div> 
+    </div>
+
+    <div class="single-pro-details">
+        <h6>Home / Hanorac</h6>
+        <h4> Hanorac Nana</h4>
+        <h2>179,99 ron</h2>
+        <select>
+            <option>Select Size</option>
+            <option>XL</option>
+            <option>L</option>
+            <option>M</option>
+            <option>S</option>
+
+        </select>
+        <input type="number" value="1">
+        <button class="normal">Add To Cart</button>
+
+
+    </div>
+</section>
+
+    <section id="newsletter" class="section-p1">
+        <div class="newstext">
+            <h4></h4>
+            <p></p>
+        </div>
+
+    </section>
+
+    <footer class="section-p1">
+        <div class="col">
+           <img class="logo" src="img/logo.png" width="150" height="25" alt="">
+           <h4> Contact</h4>
+           <p><strong>Addres:</strong> Otelu Rosu, Caras Severin, Republicii nr 86</p>
+           <p><strong>Phone:</strong>+40 768 932 051</p>
+           <p><strong>Hours:</strong>9:00 - 17:00, Mon - Fri</p>
+           <div class="follow">
+            <h4>Follow us</h4>
+            <div class="icon">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-youtube"></i>
+            </div>
+           </div>
+        </div>
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">About us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Contact Us</a>
+        </div>
+
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="#">Sign In</a>
+            <a href="#">View Cart</a>
+            <a href="#">My Wishlist</a>
+            <a href="#">Track My Order</a>
+            <a href="#">Help</a>
+        </div>
+    </footer>
+
+    <script>
+      var MainImg= document.getElementById("MainImg");
+      var smallimg= document.getElementsByClassName("small-img")
+
+      smallimg[0].onclick = function(){
+        MainImg.src= smallimg[0].src;
+      }
+      smallimg[1].onclick = function(){
+        MainImg.src= smallimg[1].src;
+      }
+      smallimg[2].onclick = function(){
+        MainImg.src= smallimg[2].src;
+      }
+      smallimg[3].onclick = function(){
+        MainImg.src= smallimg[3].src;
+      }
+    </script>
+
+    <script src="script.js"></script>
+</body>
+</html>
